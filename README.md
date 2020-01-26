@@ -7,7 +7,10 @@ In case you need a simple access control system to play with, ESPKey can do that
 Have a look [over here](https://github.com/octosavvi/ESPKey/releases/latest) for the latest pre-built firmware and UI release.
 
 ### Build instructions
-Open in Arduino IDE and click Verify (or Upload if connected to UART).
+1. [Install PlatformIO's CLI](https://platformio.org/install/cli) or [IDE](https://platformio.org/platformio-ide)
+2. From the top level directory, execute `platformio run`
+
+The firmware will be left in `.pio/build/esp12e/firmware.bin`
 
 ### Usage
 Check out [this great documentation](https://redteamtools.com/espkey) put together by Babak of Red Team Tools.

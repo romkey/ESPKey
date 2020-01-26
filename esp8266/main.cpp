@@ -296,7 +296,8 @@ bool loadConfig() {
     char buf[20];
     strncpy(buf, json["syslog_server"], 20);
     syslog_server.fromString(buf);
-    DBG_OUTPUT_PORT.println("Loaded syslog_server: " + String(syslog_server, HEX));
+    //    DBG_OUTPUT_PORT.println("Loaded syslog_server: " + String(syslog_server, HEX));
+    DBG_OUTPUT_PORT.println("Loaded syslog_server: " + syslog_server.toString());
   }
   if (json.containsKey("syslog_port")) {
     syslog_port = json["syslog_port"];
